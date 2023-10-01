@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Properties</title>
+    <style>
+      body {
+        background-color: #333;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        align-items: center;
+      }
+
+      label {
+        text-align: right;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 5px;
+        background-color: #555;
+        color: white;
+        border: none;
+      }
+
+      button {
+        grid-column: span 2;
+        padding: 5px 10px;
+        background-color: #007ACC;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #005aa3;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="propertyForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <label for="hostname">Hostname:</label>
+      <input type="text" id="hostname" name="hostname" />
+      <label for="port">Port:</label>
+      <input type="number" id="port" name="port" />
+      <label for="deviceType">Device Type:</label>
+      <select id="deviceType" name="deviceType">
+        <option>Type2</option>
+        <option>Type3</option>
+        <option>Type4</option>
+        <option>Type5</option>
+        <option>Dynamic</option>
+      </select>
+      <button type="submit">Save</button>
+      <button type="button" id="cancel">Cancel</button>
+    </form>
+    <script src="modal.js"></script>
+  </body>
+</html>

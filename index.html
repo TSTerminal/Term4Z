@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+    <title>Term4Z: Cross Platform Mainframe Terminal</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Welcome to Term4Z</h1>
+    <p>You can make an new Session configuration with File->New, or doubleclick on existing connection below.</p>
+    <hr/>
+    <div id="container"></div>
+    <div id="context-menu" class="context-menu">
+    </div>
+  </body>
+  <script type="module" src="renderer.js"></script>
+</html>
